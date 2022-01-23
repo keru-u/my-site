@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       <h1>けるのうたわれ倉庫</h1>
       <p>工事中です。</p>
       <p>おそらく１月中に更新されるはずです。</p>
+      <button><a href="https://github.com/keru-u/my-site/projects/1">更新状況</a></button>
       <p></p>
     </div>
   )
