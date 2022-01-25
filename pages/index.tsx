@@ -28,8 +28,9 @@ const Home: NextPage = () => {
       <br />
       <Text fontSize='md'>
         工事中です。<br />
-        １月中に更新されるはず……！
+        １月中に更新されるはず(願望)
       </Text>
+      <br />
       <br />
       <Link  href='https://github.com/keru-u/my-site/projects/1' isExternal>進捗状況：GitHub<ExternalLinkIcon mx='2px' /></Link>
       </Box>
