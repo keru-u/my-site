@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Link, Box,Text,Heading,Container, Button, ChakraProvider } from "@chakra-ui/react";
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import theme from "../theme/theme";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>けるのうたわれ倉庫</title>
         <meta name="description" content="作ったものを置く予定です。工事中です。" />
@@ -18,10 +21,22 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       </Head>
-      <h1>けるのうたわれ倉庫</h1>
-      <p>工事中です。</p>
-      <p>１月中に更新されるはず……！</p>
-      <p></p>
+      <body>
+      <ChakraProvider theme={theme}>
+      <Container maxW='container.md'>
+      <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
+      <Heading>けるのうたわれ倉庫</Heading>
+      <br />
+      <Text fontSize='md'>
+        工事中です。<br />
+        １月中に更新されるはず……！
+      </Text>
+      <br />
+      <Link  href='https://github.com/keru-u/my-site/projects/1' isExternal>進捗状況：GitHub<ExternalLinkIcon mx='2px' /></Link>
+      </Box>
+      </Container>
+      </ChakraProvider>
+      </body>
     </div>
   )
 }
