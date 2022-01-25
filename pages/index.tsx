@@ -21,7 +21,6 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       </Head>
-      <body>
       <ChakraProvider theme={theme}>
       <Container maxW='container.md'>
       <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
@@ -36,7 +35,6 @@ const Home: NextPage = () => {
       </Box>
       </Container>
       </ChakraProvider>
-      </body>
     </div>
   )
 }
