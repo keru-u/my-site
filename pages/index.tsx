@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import { Link, Box,Text,Heading,Container, Button, ChakraProvider } from "@chakra-ui/react";
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
@@ -23,9 +24,12 @@ const Home: NextPage = () => {
       </Head>
       <ChakraProvider theme={theme}>
       <Container maxW='container.md'>
+      <Box marginLeft={1} marginRight={1} marginTop={0} marginBottom={0} bg="red.50">
+      <Box m={1} p={1} bg="red.100">
       <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
       <Heading size="lg">けるのうたわれ倉庫</Heading>
       <br />
+      <Image src="/images/avatar.svg" width={48} height={48}  alt="My avatar" />
       <Text fontSize='xl'>
         工事中です。<br />
         １月中に更新されるはずです。(願望)
@@ -57,6 +61,8 @@ const Home: NextPage = () => {
       <Heading size="md">連絡先</Heading>
       <br />
       <Link  href='https://mobile.twitter.com/keru_utaware' isExternal>Twitter：@keru_utaware<ExternalLinkIcon mx='2px' /></Link>
+      </Box>
+      </Box>
       </Box>
       </Container>
       </ChakraProvider>
