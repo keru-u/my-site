@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <br />
       <Text fontSize='xl'>
         工事中です。<br />
-        １月中に更新されるはず(願望)
+        １月中に更新されるはずです。(願望)
       </Text>
       <br />
       <br />
