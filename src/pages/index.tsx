@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <ChakraProvider theme={theme}>
       <Container maxW='container.md'>
-      <Box marginLeft={1} marginRight={1} marginTop={0} marginBottom={0} bg="red.50">
+      <Box marginLeft={1} marginRight={1} borderRadius="md" marginTop={0} marginBottom={0} bg="white">
       <Box m={1} p={1} bg="red.100">
       <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
       <Heading size="lg">けるのうたわれ倉庫</Heading>
