@@ -42,13 +42,6 @@ const Home: NextPage = () => {
         <br />
         <Link  href='https://poipiku.com/1765122/' isExternal>ポイピク<ExternalLinkIcon mx='2px' /></Link>
       </Box>
-
-      <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
-        <Heading size="md">連絡先</Heading>
-        <br />
-        <Link  href='https://mobile.twitter.com/keru_utaware' isExternal>Twitter：@keru_utaware<ExternalLinkIcon mx='2px' /></Link>
-      </Box>
-
     </Layout>
   )
 }
