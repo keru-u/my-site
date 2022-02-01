@@ -1,15 +1,16 @@
 import Head from "next/head";
 import { Heading, Box, Container, ChakraProvider } from "@chakra-ui/react";
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ReactNode } from "react";
 
 import Link from "./Link";
 
 import theme from "../src/theme/theme";
 
-export default function Layout({ 
-    children,
-    title = "けるのうたわれ倉庫",
-    description = "作ったものを置く予定です。工事中です。"
+export default function Layout({ children, title, description }: {
+    children?: ReactNode,
+    title: string,
+    description: string 
     }) { return(
     <div>
         <Head>
