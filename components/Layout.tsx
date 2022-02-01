@@ -11,7 +11,7 @@ export default function Layout({ children, title, description }: {
     children?: ReactNode
     title: string
     description: string
-    }): JSX.Element { return(
+    }) { return(
     <div>
         <Head>
             <title>{title}</title>
