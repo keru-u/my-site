@@ -15,8 +15,8 @@ const Home: NextPage = () => {
         <br />
         <Image src="/images/avatar.svg" width={48} height={48}  alt="My avatar" />
         <Text fontSize='xl'>
-          工事中です。<br />
-          １月中に更新されるはずです。(願望)
+        工事中です。<br />
+        2月中に何か公開したいです。(願望)
         </Text>
         <br />
         <br />
