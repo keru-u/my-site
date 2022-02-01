@@ -3,7 +3,6 @@ import { Link, Heading, Box, Container, ChakraProvider } from "@chakra-ui/react"
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { ReactNode } from "react";
 
-
 import theme from "../src/theme/theme";
 
 export default function Layout({ children, title, description }: {

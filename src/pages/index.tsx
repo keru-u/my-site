@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <Link  href='https://poipiku.com/1765122/' isExternal>ポイピク<ExternalLinkIcon mx='2px' /></Link>
       </Box>
 
-    </Layout>
+</Layout>
   )
 }
 
