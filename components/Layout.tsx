@@ -1,14 +1,15 @@
 import Head from "next/head";
-import { Center, Box,Button, Container, ChakraProvider } from "@chakra-ui/react";
-import Link from "next/link";
+import { Link, Heading, Box, Container, ChakraProvider } from "@chakra-ui/react";
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ReactNode } from "react";
 
 
 import theme from "../src/theme/theme";
 
-export default function Layout({ 
-    children,
-    title = "けるのうたわれ倉庫",
-    description = "作ったものを置く予定です。工事中です。"
+export default function Layout({ children, title, description }: {
+    children?: ReactNode
+    title: string
+    description: string
     }) { return(
     <div>
         <Head>
@@ -39,6 +40,13 @@ export default function Layout({
             <Box marginLeft={1} marginRight={1} borderRadius="md" marginTop={0} marginBottom={0} bg="white">
             <Box m={1} p={1} bg="red.100">
             {children}
+
+            <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
+                <Heading size="md">連絡先</Heading>
+                <br />
+                <Link  href='https://mobile.twitter.com/keru_utaware' isExternal>Twitter：@keru_utaware<ExternalLinkIcon mx='2px' /></Link>
+            </Box>
+
             </Box>
             </Box>
             </Container>
