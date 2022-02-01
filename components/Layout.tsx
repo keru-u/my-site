@@ -8,9 +8,9 @@ import Link from "./Link";
 import theme from "../src/theme/theme";
 
 export default function Layout({ children, title, description }: {
-    children?: ReactNode,
-    title: string,
-    description: string 
+    children?: ReactNode;
+    title: string;
+    description: string ;
     }) { return(
     <div>
         <Head>
