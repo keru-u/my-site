@@ -4,6 +4,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { ReactNode } from "react";
 
 import theme from "../src/theme/theme";
+import { LinkEx } from "./NextLink";
 
 export default function Layout({ children, title, description }: {
     children?: ReactNode
@@ -41,7 +42,9 @@ export default function Layout({ children, title, description }: {
             {children}
             <Box m={8} bg='white'  borderRadius='md'  p={5} shadow='md'  >
                 <Heading size="md">連絡先</Heading><br />
-                <Link  href='https://mobile.twitter.com/keru_utaware' isExternal>Twitter：@keru_utaware<ExternalLinkIcon mx='2px' /></Link>
+                <LinkEx href={'https://mobile.twitter.com/keru_utaware'}>
+                    <Link isExternal>Twitter：@keru_utaware<ExternalLinkIcon mx='2px' /></Link>
+                </LinkEx>
             </Box>
             </Box>
             </Box>
