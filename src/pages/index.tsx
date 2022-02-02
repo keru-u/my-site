@@ -5,6 +5,7 @@ import { Link, Box,Text,Heading} from "@chakra-ui/react";
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import Layout from '../../components/Layout';
+import { LinkEx } from '../../components/NextLink';
 
 const Home: NextPage = () => {
   return (
@@ -28,19 +29,31 @@ const Home: NextPage = () => {
         <br /><br />
         <Heading size="md">ツール</Heading>
         <br />
-        <Link  href='https://odaibako.net/gacha/1077' isExternal>ロスフラお題ガチャ<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://odaibako.net/gacha/1077' prefetch={false}>
+          <Link isExternal>ロスフラお題ガチャ<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
         <br /><br />
-        <Link  href='https://odaibako.net/gacha/2477' isExternal>ロスフラふわっとしたお題ガチャ<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://odaibako.net/gacha/2477' prefetch={false}>
+          <Link   isExternal>ロスフラふわっとしたお題ガチャ<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
         <br /><br />
-        <Link  href='https://mekepon.com/bingo/zUADOZnhhJAztKVi4QwO' isExternal>ロスフラ廃人度チェック<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://mekepon.com/bingo/zUADOZnhhJAztKVi4QwO' prefetch={false}>
+          <Link isExternal>ロスフラ廃人度チェック<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
         <br /><br />
-        <Link  href='https://docs.google.com/spreadsheets/d/1ujpqMT4OHgyJsyAo2qlz_JA1ZtNXvnEHgNsAnR-wKxY/edit' isExternal>調伏戦編成シミュレーター<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://docs.google.com/spreadsheets/d/1ujpqMT4OHgyJsyAo2qlz_JA1ZtNXvnEHgNsAnR-wKxY/edit' prefetch={false}>
+          <Link   isExternal>調伏戦編成シミュレーター<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
         <br /><br />
-        <Link  href='https://docs.google.com/spreadsheets/d/16vo2_834HyC2nXOQHBGeLBxywaf5CrN52KoA-qmfr7E/edit' isExternal>ロスフラCT計算機<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://docs.google.com/spreadsheets/d/16vo2_834HyC2nXOQHBGeLBxywaf5CrN52KoA-qmfr7E/edit' prefetch={false}>
+          <Link isExternal>ロスフラCT計算機<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
         <br /><br /><br />
         <Heading size="md">イラスト</Heading>
         <br />
-        <Link  href='https://poipiku.com/1765122/' isExternal>ポイピク<ExternalLinkIcon mx='2px' /></Link>
+        <LinkEx href='https://poipiku.com/1765122/' prefetch={false}>
+          <Link isExternal>ポイピク<ExternalLinkIcon mx='2px' /></Link>
+        </LinkEx>
       </Box>
     </Layout>
   )

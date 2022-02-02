@@ -24,6 +24,7 @@ export default function Layout({ children, title, description }: {
             <meta name="msapplication-TileColor" content="#7d9661" />
             <meta name="theme-color" content="#ffffff" />
             <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+            
         </Head>
 
         {/* <nav>
