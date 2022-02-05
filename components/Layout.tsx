@@ -32,7 +32,8 @@ export default function Layout({ children, title, description }: {
                 <Button m={8} bg='white'  borderRadius='md'  p={5}><Link href="/"><a>Home</a></Link></Button>
                 <Button m={8} bg='white'  borderRadius='md'  p={5}><Link href="/blog-page"><a>Blog</a></Link></Button>
                 <Button m={8} bg='white'  borderRadius='md'  p={5}><Link href="/contact-page"><a >Contact</a></Link></Button>
-            </Center>
+                <Button m={8} bg='white'  borderRadius='md'  p={5}><Link href="/isekityosa-matome"><a >Iseki</a></Link></Button>
+                </Center>
         </nav> */}
         
         <main>
