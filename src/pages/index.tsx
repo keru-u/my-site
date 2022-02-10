@@ -5,7 +5,7 @@ import { Link, Box, Text, Heading } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import Layout from '../../components/Layout'
-import { LinkEx } from '../../components/NextLink'
+import { LinkEx } from '../../components/LinkEx'
 
 const Home: NextPage = () => {
   return (
