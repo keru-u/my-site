@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 
-import Image from 'next/image'
-import { Link, Box, Text, Heading } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Box, Heading } from '@chakra-ui/react'
 
 import Layout from '../../components/Layout'
 import { Work } from '../../components/Work'
+import { SiteTopStatus } from '../../components/SiteTopStatus'
 
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
@@ -14,23 +13,16 @@ const Home: NextPage = () => {
 
   return (
     <Layout title={title} description={description}>
+      <SiteTopStatus title={title} currentStatus={currentStatus} />
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Heading size="lg">{title}</Heading>
-        <br />
-        <Image src="/images/avatar.svg" width={48} height={48} alt="My avatar" />
-        <Text fontSize="xl">
-          {currentStatus}
-          <br />
-          <br />
-          <Work href="https://github.com/keru-u/my-site/projects/1" title="進捗状況：GitHub" />
-        </Text>
-      </Box>
-
-      <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Heading size="md">過去に作ったもの</Heading>
+        <Heading size="md" fontFamily="Reggae One">
+          過去に作ったもの
+        </Heading>
         <br />
         <br />
-        <Heading size="md">ツール</Heading>
+        <Heading size="md" fontFamily="Reggae One">
+          ツール
+        </Heading>
         <br />
         <Work href="https://odaibako.net/gacha/1077" title="ロスフラお題ガチャ" />
         <Work href="https://odaibako.net/gacha/2477" title="ロスフラふわっとしたお題ガチャ" />
@@ -47,7 +39,9 @@ const Home: NextPage = () => {
           title="ロスフラCT計算機"
         />
         <br />
-        <Heading size="md">イラスト</Heading>
+        <Heading size="md" fontFamily="Reggae One">
+          イラスト
+        </Heading>
         <br />
         <Work href="https://poipiku.com/1765122/" title="ポイピク" />
       </Box>
