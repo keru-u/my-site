@@ -5,7 +5,7 @@ import { Link, Box, Text, Heading } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import Layout from '../../components/Layout'
-import { LinkEx } from '../../components/LinkEx'
+import { Work } from '../../components/Work'
 
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
@@ -22,10 +22,7 @@ const Home: NextPage = () => {
           {currentStatus}
           <br />
           <br />
-          <Link href="https://github.com/keru-u/my-site/projects/1" isExternal>
-            進捗状況：GitHub
-            <ExternalLinkIcon mx="2px" />
-          </Link>
+          <Work href="https://github.com/keru-u/my-site/projects/1" title="進捗状況：GitHub" />
         </Text>
       </Box>
 
@@ -35,61 +32,24 @@ const Home: NextPage = () => {
         <br />
         <Heading size="md">ツール</Heading>
         <br />
-        <LinkEx href="https://odaibako.net/gacha/1077" prefetch={false}>
-          <Link isExternal>
-            ロスフラお題ガチャ
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
-        <br />
-        <br />
-        <LinkEx href="https://odaibako.net/gacha/2477" prefetch={false}>
-          <Link isExternal>
-            ロスフラふわっとしたお題ガチャ
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
-        <br />
-        <br />
-        <LinkEx href="https://mekepon.com/bingo/zUADOZnhhJAztKVi4QwO" prefetch={false}>
-          <Link isExternal>
-            ロスフラ廃人度チェック
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
-        <br />
-        <br />
-        <LinkEx
+        <Work href="https://odaibako.net/gacha/1077" title="ロスフラお題ガチャ" />
+        <Work href="https://odaibako.net/gacha/2477" title="ロスフラふわっとしたお題ガチャ" />
+        <Work
+          href="https://mekepon.com/bingo/zUADOZnhhJAztKVi4QwO"
+          title="ロスフラ廃人度チェック"
+        />
+        <Work
           href="https://docs.google.com/spreadsheets/d/1ujpqMT4OHgyJsyAo2qlz_JA1ZtNXvnEHgNsAnR-wKxY/edit"
-          prefetch={false}
-        >
-          <Link isExternal>
-            調伏戦編成シミュレーター
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
-        <br />
-        <br />
-        <LinkEx
+          title="調伏戦編成シミュレーター"
+        />
+        <Work
           href="https://docs.google.com/spreadsheets/d/16vo2_834HyC2nXOQHBGeLBxywaf5CrN52KoA-qmfr7E/edit"
-          prefetch={false}
-        >
-          <Link isExternal>
-            ロスフラCT計算機
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
-        <br />
-        <br />
+          title="ロスフラCT計算機"
+        />
         <br />
         <Heading size="md">イラスト</Heading>
         <br />
-        <LinkEx href="https://poipiku.com/1765122/" prefetch={false}>
-          <Link isExternal>
-            ポイピク
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </LinkEx>
+        <Work href="https://poipiku.com/1765122/" title="ポイピク" />
       </Box>
     </Layout>
   )

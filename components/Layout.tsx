@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import { Link, Heading, Box, Container, ChakraProvider } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Box, Container, ChakraProvider } from '@chakra-ui/react'
 
 import { ReactNode } from 'react'
 import theme from '../src/theme/theme'
-import { LinkEx } from './LinkEx'
+import { Work } from './Work'
 
 type LayoutProps = {
   children?: ReactNode
@@ -52,14 +51,10 @@ export default function Layout({ children, title, description }: LayoutProps) {
               <Box m={1} p={1} bg="red.100">
                 {children}
                 <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-                  <Heading size="md">連絡先</Heading>
-                  <br />
-                  <LinkEx href={'https://mobile.twitter.com/keru_utaware'}>
-                    <Link isExternal>
-                      Twitter：@keru_utaware
-                      <ExternalLinkIcon mx="2px" />
-                    </Link>
-                  </LinkEx>
+                  <Work
+                    href="https://mobile.twitter.com/keru_utaware"
+                    title="Twitter：@keru_utaware"
+                  />
                 </Box>
               </Box>
             </Box>
