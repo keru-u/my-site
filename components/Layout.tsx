@@ -6,15 +6,13 @@ import { ReactNode } from 'react'
 import theme from '../src/theme/theme'
 import { LinkEx } from './LinkEx'
 
-export default function Layout({
-  children,
-  title,
-  description,
-}: {
+type LayoutProps = {
   children?: ReactNode
   title: string
   description: string
-}) {
+}
+
+export default function Layout({ children, title, description }: LayoutProps) {
   return (
     <div>
       <Head>
