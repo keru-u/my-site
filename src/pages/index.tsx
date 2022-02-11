@@ -8,23 +8,25 @@ import Layout from '../../components/Layout'
 import { LinkEx } from '../../components/LinkEx'
 
 const Home: NextPage = () => {
+  const title: string = 'けるのうたわれ倉庫'
+  const description: string = '作ったものを置く予定です。'
+  const currentStatus: string = '2月中に何か公開予定です。'
+
   return (
-    <Layout title="けるのうたわれ倉庫 トップページ" description="作ったものを置く予定です。">
+    <Layout title={title} description={description}>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Heading size="lg">けるのうたわれ倉庫</Heading>
+        <Heading size="lg">{title}</Heading>
         <br />
         <Image src="/images/avatar.svg" width={48} height={48} alt="My avatar" />
         <Text fontSize="xl">
-          工事中です。
+          {currentStatus}
           <br />
-          2月中に何か公開したいです。(願望)
+          <br />
+          <Link href="https://github.com/keru-u/my-site/projects/1" isExternal>
+            進捗状況：GitHub
+            <ExternalLinkIcon mx="2px" />
+          </Link>
         </Text>
-        <br />
-        <br />
-        <Link href="https://github.com/keru-u/my-site/projects/1" isExternal>
-          進捗状況：GitHub
-          <ExternalLinkIcon mx="2px" />
-        </Link>
       </Box>
 
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
