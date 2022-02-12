@@ -12,7 +12,7 @@ type LayoutProps = {
   description: string
 }
 
-export default function Layout({ children, title, description }: LayoutProps) {
+export const Layout = ({ children, title, description }: LayoutProps) => {
   return (
     <>
       <Head>
@@ -26,7 +26,7 @@ export default function Layout({ children, title, description }: LayoutProps) {
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Reggae+One&display=optional"
+          href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Reggae+One&display=optional"
         />
         <meta name="msapplication-TileColor" content="#7d9661" />
         <meta name="theme-color" content="#ffffff" />

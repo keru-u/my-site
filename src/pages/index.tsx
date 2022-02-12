@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
 
-import { Box, Heading } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
-import Layout from '../../components/Layout'
+import { Layout } from '../../components/Layout'
 import { Work } from '../../components/Work'
 import { SiteTopStatus } from '../../components/SiteTopStatus'
+import { HeadingEx } from '../../components/HeadingEx'
 
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
@@ -15,15 +16,8 @@ const Home: NextPage = () => {
     <Layout title={title} description={description}>
       <SiteTopStatus title={title} currentStatus={currentStatus} />
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Heading size="md" fontFamily="Reggae One">
-          過去に作ったもの
-        </Heading>
-        <br />
-        <br />
-        <Heading size="md" fontFamily="Reggae One">
-          ツール
-        </Heading>
-        <br />
+        <HeadingEx size="md" title="過去に作ったもの" />
+        <HeadingEx size="sm" title="ツール" />
         <Work href="https://odaibako.net/gacha/1077" title="ロスフラお題ガチャ" />
         <Work href="https://odaibako.net/gacha/2477" title="ロスフラふわっとしたお題ガチャ" />
         <Work
@@ -38,11 +32,7 @@ const Home: NextPage = () => {
           href="https://docs.google.com/spreadsheets/d/16vo2_834HyC2nXOQHBGeLBxywaf5CrN52KoA-qmfr7E/edit"
           title="ロスフラCT計算機"
         />
-        <br />
-        <Heading size="md" fontFamily="Reggae One">
-          イラスト
-        </Heading>
-        <br />
+        <HeadingEx size="md" title="イラスト" />
         <Work href="https://poipiku.com/1765122/" title="ポイピク" />
       </Box>
     </Layout>

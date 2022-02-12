@@ -6,7 +6,7 @@ const theme = extendTheme({
       body: {
         backgroundColor: 'red.900',
         color: 'orange.900',
-        fontFamily: 'Reggae One',
+        fontFamily: 'Kaisei Decol',
       },
     },
   },

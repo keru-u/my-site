@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Heading, Box, Text } from '@chakra-ui/react'
 
 import { Work } from './Work'
+import { HeadingEx } from './HeadingEx'
 
 type SiteTopStatusProps = {
   title: string
@@ -12,12 +13,9 @@ export const SiteTopStatus = ({ title, currentStatus }: SiteTopStatusProps) => {
   return (
     <>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Heading size="lg" fontFamily="Reggae One">
-          {title}
-        </Heading>
-        <br />
+        <HeadingEx size="lg" title={title} />
         <Image src="/images/avatar.svg" width={48} height={48} alt="My avatar" />
-        <Text fontSize="xl">
+        <Text fontSize="md">
           {currentStatus}
           <br />
           <br />
