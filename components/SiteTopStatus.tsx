@@ -6,21 +6,16 @@ import { HeadingEx } from './HeadingEx'
 type SiteTopStatusProps = {
   title: string
   currentStatus: String
+  src: string
 }
 
-export const SiteTopStatus = ({ title, currentStatus }: SiteTopStatusProps) => {
+export const SiteTopStatus = ({ title, currentStatus, src }: SiteTopStatusProps) => {
   return (
     <>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
         <Flex alignItems="center">
           <HeadingEx size="lg" title={title} />
-          <Image
-            src="/images/avatar.svg"
-            alt="My avatar"
-            boxSize="48px"
-            borderRadius="full"
-            ml="4"
-          />
+          <Image src={src} alt={title} boxSize="48px" borderRadius="full" ml="4" />
         </Flex>
         <Text fontSize="md">
           {currentStatus}

@@ -9,15 +9,16 @@ import { HeadingEx } from '../../components/HeadingEx'
 
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
-  const description: string = '作ったものを置く予定です。'
-  const currentStatus: string = '2月中に何か公開予定です。'
+  const description: string = '2月中に何か公開予定です。'
+  const src: string = '/images/avatar.svg'
 
   return (
     <Layout title={title} description={description}>
-      <SiteTopStatus title={title} currentStatus={currentStatus} />
+      <SiteTopStatus title={title} currentStatus={description} src={src} />
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
         <HeadingEx size="md" title="過去に作ったもの" />
         <HeadingEx size="sm" title="ツール" />
+        <Work href="/test-iseki" title="遺跡調査報酬 統計調査" />
         <Work href="https://odaibako.net/gacha/1077" title="ロスフラお題ガチャ" />
         <Work href="https://odaibako.net/gacha/2477" title="ロスフラふわっとしたお題ガチャ" />
         <Work
