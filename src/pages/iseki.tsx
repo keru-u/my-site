@@ -41,7 +41,7 @@ const Iseki = () => {
         />
         <HeadingEx size="sm" title="調査結果入力フォーム" />
         <Work
-          href="https://docs.google.com/forms/d/1HGJeDLGDUAgX_jRrTn6g26Wn5Q4gatJp1H5UG_BGkjU/edit?usp=forms_home&ths=true"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScpe4WwCxSdVvtC2sll9y-tvkUd1l0Q8KOCceSED15ErknLLg/viewform"
           title="Googleフォーム 探索報酬の統計調査-水の遺跡"
         />
       </Box>

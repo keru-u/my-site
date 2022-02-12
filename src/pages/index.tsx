@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
         <HeadingEx size="md" title="過去に作ったもの" />
         <HeadingEx size="sm" title="ツール" />
-        <Work href="/test-iseki" title="遺跡調査報酬 統計調査" />
+        <Work href="/iseki" title="遺跡調査報酬 統計調査" />
         <Work href="https://odaibako.net/gacha/1077" title="ロスフラお題ガチャ" />
         <Work href="https://odaibako.net/gacha/2477" title="ロスフラふわっとしたお題ガチャ" />
         <Work
