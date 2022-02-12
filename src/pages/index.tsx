@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           href="https://docs.google.com/spreadsheets/d/16vo2_834HyC2nXOQHBGeLBxywaf5CrN52KoA-qmfr7E/edit"
           title="ロスフラCT計算機"
         />
-        <HeadingEx size="md" title="イラスト" />
+        <HeadingEx size="sm" title="イラスト" />
         <Work href="https://poipiku.com/1765122/" title="ポイピク" />
       </Box>
     </Layout>
