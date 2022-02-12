@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { Heading, Box, Text } from '@chakra-ui/react'
+import { Flex, Image, Box, Text } from '@chakra-ui/react'
 
 import { Work } from './Work'
 import { HeadingEx } from './HeadingEx'
@@ -13,8 +12,16 @@ export const SiteTopStatus = ({ title, currentStatus }: SiteTopStatusProps) => {
   return (
     <>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <HeadingEx size="lg" title={title} />
-        <Image src="/images/avatar.svg" width={48} height={48} alt="My avatar" />
+        <Flex>
+          <HeadingEx size="lg" title={title} />
+          <Image
+            src="/images/avatar.svg"
+            alt="My avatar"
+            boxSize="48px"
+            borderRadius="full"
+            ml="4"
+          />
+        </Flex>
         <Text fontSize="md">
           {currentStatus}
           <br />
