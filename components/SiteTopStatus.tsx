@@ -12,7 +12,7 @@ export const SiteTopStatus = ({ title, currentStatus }: SiteTopStatusProps) => {
   return (
     <>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Flex>
+        <Flex alignItems="center">
           <HeadingEx size="lg" title={title} />
           <Image
             src="/images/avatar.svg"
