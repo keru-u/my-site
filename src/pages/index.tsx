@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 import { Box } from '@chakra-ui/react'
 
-import { Layout } from '../../components/Layout'
+import Layout from '../../components/Layout'
 import { Work } from '../../components/Work'
 import { SiteTopStatus } from '../../components/SiteTopStatus'
 import { HeadingEx } from '../../components/HeadingEx'

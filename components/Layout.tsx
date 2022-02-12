@@ -12,7 +12,7 @@ type LayoutProps = {
   description: string
 }
 
-export const Layout = ({ children, title, description }: LayoutProps) => {
+export default function Layout({ children, title, description }: LayoutProps) {
   return (
     <>
       <Head>
