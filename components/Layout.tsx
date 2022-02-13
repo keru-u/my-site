@@ -12,7 +12,7 @@ type LayoutProps = {
   description: string
 }
 
-export default function Layout({ children, title, description }: LayoutProps) {
+export const Layout = ({ children, title, description }: LayoutProps) => {
   return (
     <>
       <Head>
@@ -52,3 +52,5 @@ export default function Layout({ children, title, description }: LayoutProps) {
     </>
   )
 }
+
+export default Layout

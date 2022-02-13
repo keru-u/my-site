@@ -1,27 +1,27 @@
-import { GetStaticProps } from 'next'
+import type { NextPage } from 'next'
 
 import { Box } from '@chakra-ui/react'
-import axios from 'axios'
+// import axios from 'axios'
 
 import Layout from '../../components/Layout'
 import { SiteTopStatus } from '../../components/SiteTopStatus'
 import { HeadingEx } from '../../components/HeadingEx'
 import { Work } from '../../components/Work'
 
-type IsekiTokei = {
-  id: number
-  name: string
-  to20Count: number
-  to24Count: number
-  to29Count: number
-  over30Count: number
-  to20Rate: number
-  to24Rate: number
-  to29Rate: number
-  over30Rate: number
-}
+// type IsekiTokei = {
+//   id: number
+//   name: string
+//   to20Count: number
+//   to24Count: number
+//   to29Count: number
+//   over30Count: number
+//   to20Rate: number
+//   to24Rate: number
+//   to29Rate: number
+//   over30Rate: number
+// }
 
-const Iseki = () => {
+const Iseki: NextPage = () => {
   const title: string = '遺跡調査報酬 統計調査'
   const description: string = '現在工事中です。'
   const src: string = '/images/avatar.svg'
