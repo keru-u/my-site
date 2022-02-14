@@ -1,4 +1,4 @@
-import { Flex, Image, Box, Text } from '@chakra-ui/react'
+import { HStack, Stack, Image, Box, Text } from '@chakra-ui/react'
 
 import { Work } from './Work'
 import { HeadingEx } from './HeadingEx'
@@ -13,10 +13,12 @@ export const SiteTopStatus = ({ title, currentStatus, src }: SiteTopStatusProps)
   return (
     <>
       <Box m={8} bg="white" borderRadius="md" p={5} shadow="md">
-        <Flex alignItems="center">
+        <HStack>
           <HeadingEx size="lg" title={title} />
-          <Image src={src} alt={title} boxSize="48px" borderRadius="full" ml="4" />
-        </Flex>
+          <Stack>
+            <Image src={src} alt={title} boxSize="48px" borderRadius="full" ml="4" />
+          </Stack>
+        </HStack>
         <Text fontSize="md">
           {currentStatus}
           <br />
