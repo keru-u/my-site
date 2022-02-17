@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 
 import { Box } from '@chakra-ui/react'
 
-import Layout from '../../components/templates/Layout'
-import { Work } from '../../components/molecules/Work'
-import { SiteTopStatus } from '../../components/organisms/SiteTopStatus'
-import { HeadingEx } from '../../components/molecules/HeadingEx'
+import Layout from '../components/templates/Layout'
+import { Work } from '../components/molecules/Work'
+import { SiteTopStatus } from '../components/organisms/SiteTopStatus'
+import { HeadingEx } from '../components/molecules/HeadingEx'
 
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
