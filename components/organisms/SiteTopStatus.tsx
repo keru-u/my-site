@@ -1,7 +1,7 @@
 import { HStack, Stack, Image, Box, Text } from '@chakra-ui/react'
 
-import { Work } from './Work'
-import { HeadingEx } from './HeadingEx'
+import { Work } from '../molecules/Work'
+import { HeadingEx } from '../molecules/HeadingEx'
 
 type SiteTopStatusProps = {
   title: string

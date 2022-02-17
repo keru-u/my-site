@@ -1,7 +1,7 @@
 import { Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-import { LinkEx } from './LinkEx'
+import { LinkEx } from '../atoms/LinkEx'
 
 type WorkProps = {
   title: string

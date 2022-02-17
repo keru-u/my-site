@@ -3,8 +3,8 @@ import Head from 'next/head'
 import { Box, Container, ChakraProvider } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
-import theme from '../src/theme/theme'
-import { Work } from './Work'
+import theme from '../../src/theme/theme'
+import { Work } from '../molecules/Work'
 
 type LayoutProps = {
   children?: ReactNode

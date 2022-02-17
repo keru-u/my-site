@@ -3,10 +3,10 @@ import type { NextPage } from 'next'
 import { Box } from '@chakra-ui/react'
 // import axios from 'axios'
 
-import Layout from '../../components/Layout'
-import { SiteTopStatus } from '../../components/SiteTopStatus'
-import { HeadingEx } from '../../components/HeadingEx'
-import { Work } from '../../components/Work'
+import Layout from '../../components/templates/Layout'
+import { SiteTopStatus } from '../../components/organisms/SiteTopStatus'
+import { HeadingEx } from '../../components/molecules/HeadingEx'
+import { Work } from '../../components/molecules/Work'
 
 // type IsekiTokei = {
 //   id: number
