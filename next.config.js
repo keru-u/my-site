@@ -5,8 +5,8 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  images: {
-    loader: 'imgix',
-    path: 'https://keruu.dev/',
-  },
+  // images: {
+  //   loader: 'imgix',
+  //   path: 'https://keruu.dev/',
+  // },
 }
