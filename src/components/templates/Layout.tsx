@@ -7,12 +7,14 @@ import { HeadEx } from '../molecules/HeadEx'
 
 type LayoutProps = {
   children?: ReactNode
+  title: string
+  description: string
 }
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, title, description }: LayoutProps) => {
   return (
     <>
-      <HeadEx />
+      <HeadEx title={title} description={description} />
       <main>
         <ChakraProvider theme={theme}>
           <Container maxW="container.md">
