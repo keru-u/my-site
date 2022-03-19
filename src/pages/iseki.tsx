@@ -24,7 +24,7 @@ import { Work } from '../components/molecules/Work'
 const Iseki: NextPage = () => {
   const title: string = '遺跡調査報酬 統計調査'
   const description: string = '現在工事中です。'
-  const src: string = '/images/avatar.svg'
+  const src: string = '/images/avatar.png'
   // const endpoint: string ='https://script.google.com/macros/s/AKfycby8JapKqwvjNQug7zUlTQJm4ulzYjaqTaKv8mmT-UGYMdfT-XH1TlkbghBn9cqxEwsF/exec'
 
   // const res = await fetch(endpoint,{redirect: 'follow'})

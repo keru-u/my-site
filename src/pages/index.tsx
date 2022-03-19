@@ -10,7 +10,7 @@ import { HeadingEx } from '../components/molecules/HeadingEx'
 const Home: NextPage = () => {
   const title: string = 'けるのうたわれ倉庫'
   const description: string = '3月中はのんびりしてます。'
-  const src: string = '/images/avatar.svg'
+  const src: string = '/images/avatar.png'
 
   return (
     <Layout title={title} description={description}>
