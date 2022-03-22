@@ -21,9 +21,9 @@ export const SiteTopStatus = ({ title, currentStatus, src }: SiteTopStatusProps)
         </HStack>
         <Text fontSize="md">
           {currentStatus}
+          {/* <br />
           <br />
-          <br />
-          <Work href="https://github.com/keru-u/my-site/projects/1" title="進捗状況：GitHub" />
+          <Work href="https://github.com/keru-u/my-site/projects/1" title="進捗状況：GitHub" /> */}
         </Text>
       </Box>
     </>
